@@ -1,13 +1,13 @@
-# Field: Medium Textarea #
+# Field: Medium Textarea
  
-Version: 1.0  
-Author: [Max Wheeler](http://makenosound.com)  
-Build Date: 2009-08-20  
-Compatibility: Symphony 2.0.6+
+* Version: 1.0.1
+* Author: [Max Wheeler](http://makenosound.com)
+* Build Date: 2011-03-18
+* Compatibility: Symphony 2.2
 
 Extension of the default textarea field that stores data as `mediumtext` instead of `text`.
 
-## Installation ##
+## Installation
 
 1. Clone the git repository to your Symphony `extensions` folder using:
 

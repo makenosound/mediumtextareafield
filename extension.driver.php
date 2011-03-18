@@ -8,8 +8,8 @@
 		public function about()
 		{
 			return array('name' => 'Field: Medium Textarea',
-						 'version' => '1.0',
-						 'release-date' => '2009-08-20',
+						 'version' => '1.0.1',
+						 'release-date' => '2011-03-18',
 						 'author' => array('name' => 'Max Wheeler',
 										   'website' => 'http://makenosound.com/',
 										   'email' => 'max@makenosound.com'),
@@ -19,12 +19,12 @@
 		
 		public function uninstall()
 		{
-			$this->_Parent->Database->query("DROP TABLE `tbl_fields_mediumtextarea`");
+			Symphony::Database()->query("DROP TABLE `tbl_fields_mediumtextarea`");
 		}
 		
 		public function install()
 		{
-			return $this->_Parent->Database->query("CREATE TABLE `tbl_fields_mediumtextarea` (
+			return Symphony::Database()->query("CREATE TABLE `tbl_fields_mediumtextarea` (
 				`id` int(11) unsigned NOT NULL auto_increment,
 				`field_id` int(11) unsigned NOT NULL,
 				`formatter` varchar(100) collate utf8_unicode_ci default NULL,
